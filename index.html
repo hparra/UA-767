@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Blood Pressure Monitor</title>
+	
+	<script src="http://marco.calit2.uci.edu/lib/jquery/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://marco.calit2.uci.edu/lib/jquery/jquery.json-2.2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://marco.calit2.uci.edu/lib/jquery/jquery.getUrlParam-2.1.js"></script>
+	<!--script src="http://malsup.com/jquery/block/jquery.blockUI.js?v2.28" type="text/javascript" charset="utf-8"></script-->
+	<style type="text/css" media="screen">
+		body {
+			font-family: arial;
+		}
+	
+		#bloodpressure {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+
+		#bloodpressure_monitor {
+			position: relative;
+			width: 800px;
+			left: 50%;
+			margin-left: -400px;
+			padding: 0px;
+		}
+
+		#bloodpressure_monitor img {
+			width: 100%;
+		}
+
+		#bloodpressure_output {
+			height: 235px;
+			left: 280px;
+			position: absolute;
+			top: 135px;
+			width: 150px;
+		}
+
+		#sys {
+			width: 100%;
+			height: 85px;
+			line-height: 85px;
+			font-size: 80px;
+		}
+
+		#dia {
+			width: 100%;
+			height: 85px;
+			line-height: 85px;
+			font-size: 80px;
+		}
+
+		#pul {
+			width: 100%;
+			height: 65px;
+			line-height: 65px;
+			font-size: 50px;
+		}
+
+		#bloodpressure_monitor p {
+			text-align: right;
+			margin: 0;
+			padding: 0;
+			color: black;
+		}
+	</style>
+	<script type="text/javascript" src="UA-767.js"></script>
+</head>
+
+<body>
+	<div id="bloodpressure" class="page">
+		<div id="bloodpressure_monitor">
+			<div id="bloodpressure_output">
+				<p id="sys">0</p>
+				<p id="dia">0</p>
+				<p id="pul">0</p>
+			</div>
+			<img src="UA-767.png" />
+		</div>
+	</div>
+</body>
+
+</html>
