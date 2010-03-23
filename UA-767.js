@@ -46,12 +46,19 @@ UA767 = {
 	// returns integer
 	parseSystolicPressure = function(data) {
 		
+	},
+	
+	// Fake Data
+	// returns string
+	getFakeData = function(data) {
+		// 
+		return "804C4C4960";
 	}
 }
 
 updateUI = function() {
 	
-	data = "804C4C4960";
+	data = getFakeData();
 	
 	code = parseCode(data);
 	
