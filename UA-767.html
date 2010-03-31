@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Blood Pressure Monitor</title>
+	
+	<script src="http://marco.calit2.uci.edu/lib/jquery/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://marco.calit2.uci.edu/lib/jquery/jquery.json-2.2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://marco.calit2.uci.edu/lib/jquery/jquery.getUrlParam-2.1.js"></script>
+	<script src="vendor/jquery/jquery.blockUI.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+		body {
+			font-family: arial;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+	
+		#bloodpressure {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+
+		#bloodpressure_monitor {
+			position: relative;
+			width: 800px;
+			left: 50%;
+			margin-left: -400px;
+			padding: 0px;
+		}
+
+		#bloodpressure_monitor img {
+			width: 100%;
+		}
+
+		#bloodpressure_output {
+			height: 235px;
+			left: 280px;
+			position: absolute;
+			top: 135px;
+			width: 150px;
+		}
+
+		#sys {
+			width: 100%;
+			height: 85px;
+			line-height: 85px;
+			font-size: 80px;
+		}
+
+		#dia {
+			width: 100%;
+			height: 85px;
+			line-height: 85px;
+			font-size: 80px;
+		}
+
+		#pul {
+			width: 100%;
+			height: 65px;
+			line-height: 65px;
+			font-size: 50px;
+		}
+
+		#bloodpressure_monitor p {
+			text-align: right;
+			margin: 0;
+			padding: 0;
+			color: black;
+		}
+		
+		#footer {
+			font-size: 10px;
+			color: #AAAAAA;
+		}
+		
+		#footer a {
+			color: #AAAAAA;
+		}
+		
+		#debug_screen {
+			position: fixed;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.6;
+			z-index: 1;
+			display: none;
+		}
+		
+		#debug_panel {
+			position: fixed;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			display: none;
+		}
+		
+	</style>
+	<script type="text/javascript" src="UA-767.js"></script>
+	<script type="text/javascript" src="UA-767_UI.js"></script>
+</head>
+
+<body>
+	<div id="bloodpressure" class="page">
+		<div id="bloodpressure_monitor">
+			<div id="bloodpressure_output">
+				<p id="sys">0</p>
+				<p id="dia">0</p>
+				<p id="pul">0</p>
+			</div>
+			<img src="UA-767.png" />
+		</div>
+		<p id="footer">Powered by <a href="http://telios.calit2.uci.edu">Telios</a>. This application is not endorsed by <a href="http://www.aandd.jp/">A&amp;D Company, Limited</a>. <a id="debug_button" href="#">Debug</a>.</p>
+	</div>
+	<div id="debug_screen"></div>
+	<div id="debug_panel">
+		<h1>UA-767 Debug Panel</h1>
+	</div>
+</body>
+
+</html>
